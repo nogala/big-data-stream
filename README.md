@@ -22,27 +22,29 @@ Creating ksql-cli        ... done
 
 Creating ksql-datagen    ... done
 
-	$ docker ps 
+	$ docker ps
 
-CONTAINER ID        IMAGE                                             COMMAND                  CREATED             STATUS                             PORTS                                        NAMES
+La salida se puede ver 
 
-a1b988a43aa3        confluentinc/ksql-examples:5.3.1                  "bash -c 'echo Waiti…"   6 minutes ago       Up 6 minutes                                                                    ksql-datagen
+        IMAGE                                             COMMAND                  CREATED             STATUS                             PORTS                                        NAMES
 
-e9810da22aa5        confluentinc/cp-enterprise-control-center:5.3.1   "/etc/confluent/dock…"   6 minutes ago       Up 23 seconds                      0.0.0.0:9021->9021/tcp                       control-center
+        confluentinc/ksql-examples:5.3.1                  "bash -c 'echo Waiti…"   6 minutes ago       Up 6 minutes                                                                    ksql-datagen
 
-2df2fea80366        confluentinc/cp-ksql-cli:5.3.1                    "/bin/sh"                6 minutes ago       Up 6 minutes                                                                    ksql-cli
+        confluentinc/cp-enterprise-control-center:5.3.1   "/etc/confluent/dock…"   6 minutes ago       Up 23 seconds                      0.0.0.0:9021->9021/tcp                       control-center
 
-51f7ff24c5f8        confluentinc/cp-ksql-server:5.3.1                 "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:8088->8088/tcp                       ksql-server
+        confluentinc/cp-ksql-cli:5.3.1                    "/bin/sh"                6 minutes ago       Up 6 minutes                                                                    ksql-cli
 
-9ad841d0f64a        cnfldemos/kafka-connect-datagen:0.1.3-5.3.1       "/etc/confluent/dock…"   6 minutes ago       Up 23 seconds (health: starting)   0.0.0.0:8083->8083/tcp, 9092/tcp             connect
+        confluentinc/cp-ksql-server:5.3.1                 "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:8088->8088/tcp                       ksql-server
 
-73bdd22bf1d3        confluentinc/cp-kafka-rest:5.3.1                  "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:8082->8082/tcp                       rest-proxy
+        cnfldemos/kafka-connect-datagen:0.1.3-5.3.1       "/etc/confluent/dock…"   6 minutes ago       Up 23 seconds (health: starting)   0.0.0.0:8083->8083/tcp, 9092/tcp             connect
 
-738365664f01        confluentinc/cp-schema-registry:5.3.1             "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:8081->8081/tcp                       schema-registry
+        confluentinc/cp-kafka-rest:5.3.1                  "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:8082->8082/tcp                       rest-proxy
 
-0a556194d356        confluentinc/cp-enterprise-kafka:5.3.1            "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:9092->9092/tcp                       broker
+        confluentinc/cp-schema-registry:5.3.1             "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:8081->8081/tcp                       schema-registry
 
-233ee08ba9e9        confluentinc/cp-zookeeper:5.3.1                   "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       2888/tcp, 0.0.0.0:2181->2181/tcp, 3888/tcp   zookeeper
+        confluentinc/cp-enterprise-kafka:5.3.1            "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       0.0.0.0:9092->9092/tcp                       broker
+
+        confluentinc/cp-zookeeper:5.3.1                   "/etc/confluent/dock…"   6 minutes ago       Up 6 minutes                       2888/tcp, 0.0.0.0:2181->2181/tcp, 3888/tcp   zookeeper
 
 
 Wait 1 - 5 minutes and enter to the Control Center web interface at http://localhost:9021/ 
